@@ -40,8 +40,12 @@ export default function AboutUs() {
                         : للتواصل معنا والاستفسار
                         <br />
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'end', gap: 20 }}>
-                            <img className='clickable-img' width={40} src={whatsappIcon} alt='whtsp' />
-                            <img className='clickable-img' width={40} src={fbIcon} alt='fb' />
+                            <img onClick={() => {
+                                window.open('https://wa.me/212682536808?text=test');
+                            }} className='clickable-img' width={40} src={whatsappIcon} alt='whtsp' />
+                            <img onClick={() => {
+                                window.open('https://www.facebook.com/limitless.graphics.media');
+                            }} className='clickable-img' width={40} src={fbIcon} alt='fb' />
                         </div>
 
                     </p>

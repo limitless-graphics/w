@@ -11,11 +11,22 @@ a {
 }
 
 .order-card {
-  background-color: #ffffff;
+  background: rgb(255, 224, 162);
+  flex: 0 1 250px;
   height: 400px;
-  width: 200px;
-  border: 5px solid rgb(231, 231, 231);
+  border: 2px solid rgb(231, 231, 231);
   border-radius: 10px;
+  transition: 250ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.order-card:hover {
+  background: white;
+  box-shadow: 15px 15px 0px #471601;
+  border-color: #471601;
 }
 
 .footer {
