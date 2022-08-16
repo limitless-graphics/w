@@ -1,5 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Readex+Pro:wght@200;400;600&family=Tajawal:wght@200;500;700;900&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Almarai', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #471601;
+}
+
+.order-card {
+  background-color: #ffffff;
+  height: 400px;
+  width: 200px;
+  border: 5px solid rgb(231, 231, 231);
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #293346;
+  height: 200px;
+  width: 100%;
+  margin-top: 80px;
+  display: 'flex';
+  justify-content: center;
+  align-items: 'center';
+}
+
+.descriptive-text {
+  font-size: 45px;
+  margin-bottom: 0;
+  color: '#471601';
+}
+
+a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.clickable-img:hover {
+  cursor: pointer;
+  color: red;
+}
+
+
+.order-button {
+  color: white;
+  font-size: 20px;
+  height: 40;
+  width: 80;
+  background-color: orange;
+  border-radius: 50px;
+  border: none;
+  border-bottom: 5px solid #471601;
+  padding: 10px 20px;
+  font-family: 'Almarai', sans-serif;
+}
+
+.order-button:hover {
+  background-color: #471601;
+  cursor: pointer;
 }
 
 .App-logo {
@@ -32,6 +93,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

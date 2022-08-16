@@ -1,0 +1,8 @@
+.orderButton {
+    color: 'white';
+    height: 40;
+    width: 80;
+    background-color: 'orange';
+    border-radius: 50;
+    border-bottom: 5px solid 'brown';
+}
