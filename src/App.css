@@ -11,10 +11,10 @@ a {
 }
 
 .order-card {
-  background: rgb(255, 224, 162);
+  background: white;
   flex: 0 1 250px;
   height: 400px;
-  border: 2px solid rgb(231, 231, 231);
+  border: 1px solid black;
   border-radius: 10px;
   transition: 250ms;
   display: flex;
@@ -27,6 +27,19 @@ a {
   background: white;
   box-shadow: 15px 15px 0px #471601;
   border-color: #471601;
+  border: 1px solid #471601;
+  position: relative;
+}
+
+.contact-us-action-button {
+  background-color: green;
+  height: 40px;
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: '0%';
 }
 
 .footer {

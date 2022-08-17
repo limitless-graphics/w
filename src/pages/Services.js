@@ -7,8 +7,8 @@ export default function Services() {
     return (
         <>
             <NavBar />
-            <main style={{ fontFamily: 'Almarai, sans-serif', textAlign: 'right', }}>
-                <h1 style={{ marginRight: 15 }}>: خدماتنا</h1>
+            <main style={{ fontFamily: 'Almarai, sans-serif', textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <h1 style={{ marginBottom: 40 }}>: خدماتنا</h1>
                 <div style={{
                     backgroundColor: 'white',
                     height: 'auto',
@@ -36,9 +36,11 @@ function Card(props) {
     return (
         <div className='order-card'>
             <h3 style={{ fontSize: 15, color: 'black' || '#f8931f' }}>{props.title}</h3>
-            <div style={{ borderRadius: 10, backgroundColor: 'rgba(0,0,0,0.2)', height: 150, width: 150 }}>
+            <div style={{ overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 10, backgroundColor: 'gray', height: 150, width: 150 }}>
 
             </div>
+            <h3 style={{ textDecoration: 'underline' }}>تصميم مناسب</h3>
+            <button className='contact-us-action-button'>action</button>
         </div>
     )
 }
