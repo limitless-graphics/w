@@ -10,16 +10,19 @@ export default function WideCard(props) {
             padding: 0,
             height: 'auto',
             width: '100%',
-            backgroundColor: 'rgb(255,255,255)',
+            backgroundColor: props.bgColor || 'white',
+            marginBottom: props.marginBottom || 0,
+            paddingBottom: props.paddingBottom || 0,
         }}>
             <div style={{
                 backgroundColor: 'transparent',
                 display: 'flex',
                 flexWrap: 'wrap',
-                justifyContent: 'space-around',
+                justifyContent: 'center',
                 height: 'auto',
                 width: '80%',
                 marginTop: 15,
+                gap: '10%',
             }}>
                 {props.children}
             </div>

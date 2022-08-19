@@ -13,7 +13,7 @@ a {
 .order-card {
   background: white;
   flex: 0 1 250px;
-  height: 400px;
+  min-height: 400px;
   border: 1px solid black;
   border-radius: 10px;
   transition: 250ms;
@@ -21,6 +21,15 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+@media(max-width: 609px) {
+  .order-card {
+    flex: 0 1 90%;
+    height: 500px;
+  }
 }
 
 .order-card:hover {
@@ -32,15 +41,41 @@ a {
 }
 
 .contact-us-action-button {
-  background-color: green;
+  background-color: orange;
+  border-radius: 10px;
   height: 40px;
-  width: 100%;
+  width: 90%;
   border: none;
   color: white;
   font-size: 20px;
+  font-family: Almarai, sans-serif;
+  transition: 100ms;
+  margin-bottom: 10px;
   position: absolute;
-  bottom: '0%';
+  bottom: 5px;
 }
+
+.contact-us-action-button:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.landing-page-text-div {
+  order: 0;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 200px;
+}
+
+@media(max-width: 710px) {
+  .landing-page-text-div {
+    order: 1;
+  }
+}
+
 
 .footer {
   background-color: #293346;
@@ -80,10 +115,14 @@ a:hover {
   border-bottom: 5px solid #471601;
   padding: 10px 20px;
   font-family: 'Almarai', sans-serif;
+  transition: 250ms;
 }
 
 .order-button:hover {
-  background-color: #471601;
+  text-decoration: none;
+  background-color: rgb(255, 173, 22);
+  box-shadow: 10px 10px 0px #471601;
+  color: white;
   cursor: pointer;
 }
 
