@@ -17,6 +17,9 @@ export default function Services() {
                     flexWrap: 'wrap',
                     justifyContent: 'center',
                     alignItems: 'stretch',
+
+
+
                     gap: 30,
                 }}>
                     <Card centerTitle='تصميم لوغو' title={'Logo'} description='.تصميم لوغو احترافي يراعي كل المعايير' >
@@ -31,7 +34,9 @@ export default function Services() {
                             </p>
                         </div>
                     </Card>
-                    <Card title={'Social media Ad'}>
+                    <Card centerTitle='تصميم إعلان / منشور'
+                        title={'Social media Ad'}
+                        description='تصميم اعلان او منشور سوشل ميديا'>
                         <div style={{}}>
                             <h5>: الملفات النهائية</h5>
                             <p style={{ textAlign: 'center' }}>
@@ -42,10 +47,14 @@ export default function Services() {
                             </p>
                         </div>
                     </Card>
-                    <Card title={'Brand identity'} >
+                    <Card
+                        title={'Brand identity'}
+                        centerTitle='تصميم هوية بصرية'
+                        description='انشاء هوية بصرية احترافية تزيد تقة العملاء'
+                    >
                         <div style={{ textAlign: 'center' }}>
                             <h5>: التصاميم المسلمة</h5>
-                            <p>
+                            <p style={{ lineHeight: 1.5, fontSize: 14 }}>
                                 Logo <br />
                                 لغة تصميم و هوية <br />
                                 بطاقة عمل <br />
@@ -83,7 +92,10 @@ function Card(props) {
                 {props.description}
             </p>
             <button className='contact-us-action-button'>اطلب الان</button>
-            {props.children}
+            <div style={{ textAlign: 'center' }}>
+                <h5>{props.finalFiles}</h5>
+                {props.children}
+            </div>
         </div>
     )
 }
