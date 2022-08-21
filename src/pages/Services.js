@@ -64,8 +64,17 @@ export default function Services() {
                             </p>
                         </div>
                     </Card>
-                    <Card centerTitle={'تصميم بطاقة عمل'} description={'تصميم بطاقة عمل احترافية تعكس مشروعك'} title={'Bisuness card'} >
-
+                    <Card centerTitle={'تصميم بطاقة عمل'}
+                        description={'تصميم بطاقة عمل احترافية تعكس مشروعك'}
+                        title={'Bisuness card'}
+                        finalFiles={'الملفات النهائية'}
+                    >
+                        <p>
+                            ملف .AI / .PSD <br />
+                            ملف .JPG <br />
+                            ملف .PNG <br />
+                            ملف .PDF <br />
+                        </p>
                     </Card>
                     <Card
                         centerTitle={'تصميم إعلان'}
