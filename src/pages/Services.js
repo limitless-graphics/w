@@ -22,7 +22,11 @@ export default function Services() {
 
                     gap: 30,
                 }}>
-                    <Card centerTitle='تصميم لوغو' title={'Logo'} description='.تصميم لوغو احترافي يراعي كل المعايير' >
+                    <Card centerTitle='تصميم لوغو'
+                        title={'Logo'}
+                        description='.تصميم لوغو احترافي يراعي كل المعايير'
+                        photo='logo.png'
+                    >
                         <div style={{}}>
                             <h5>: الملفات النهائية</h5>
                             <p style={{ textAlign: 'center' }}>
@@ -36,7 +40,11 @@ export default function Services() {
                     </Card>
                     <Card centerTitle='تصميم إعلان / منشور'
                         title={'Social media Ad'}
-                        description='تصميم اعلان او منشور سوشل ميديا'>
+                        description='تصميم اعلان او منشور سوشل ميديا'
+                        photo='socialMediaAd.png'
+                    >
+
+
                         <div style={{}}>
                             <h5>: الملفات النهائية</h5>
                             <p style={{ textAlign: 'center' }}>
@@ -51,6 +59,7 @@ export default function Services() {
                         title={'Brand identity'}
                         centerTitle='تصميم هوية بصرية'
                         description='انشاء هوية بصرية احترافية تزيد تقة العملاء'
+                        photo='brandIdentity.png'
                     >
                         <div style={{ textAlign: 'center' }}>
                             <h5>: التصاميم المسلمة</h5>
@@ -68,6 +77,7 @@ export default function Services() {
                         description={'تصميم بطاقة عمل احترافية تعكس مشروعك'}
                         title={'Bisuness card'}
                         finalFiles={'الملفات النهائية'}
+                        photo={'bisunessCard.png'}
                     >
                         <p>
                             ملف .AI / .PSD <br />
@@ -94,6 +104,7 @@ export default function Services() {
                         description='يمكنك طلب التصميم الذي تريد في هدا الخيار'
                         title='تصميم خاص'
                         finalFiles=' : الملفات المسلمة'
+                        photo='customDesign.png'
                     >
                         <h4>مخصصة</h4>
                     </Card>
@@ -105,11 +116,21 @@ export default function Services() {
     )
 }
 function Card(props) {
+
+    let cardImage = 'logo.png'
+
+    function photoWidth() {
+        let width = 0;
+        if (props.photo === 'logo.png') {
+            width = 70;
+        } else width = 120;
+        return width;
+    }
     return (
         <div className='order-card'>
             <h3 style={{ fontSize: 15, color: 'black' || '#f8931f' }}>{props.title}</h3>
-            <div style={{ overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 10, backgroundColor: 'gray', height: 150, width: 150 }}>
-
+            <div style={{ overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 10, backgroundColor: 'white', height: 150, width: 150 }}>
+                <img width={photoWidth()} src={require(`../assets/${props.photo || 'logo.png'}`)} alt='limitless graphics logo' />
             </div>
             <h3 style={{ textDecoration: 'underline' }}>{props.centerTitle || 'تصميم مناسب'}</h3>
             <p style={{ fontSize: 12 }}>
