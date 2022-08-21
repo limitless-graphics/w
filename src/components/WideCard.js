@@ -10,7 +10,7 @@ export default function WideCard(props) {
             padding: 0,
             height: 'auto',
             width: '100%',
-            backgroundColor: props.bgColor || 'white',
+            backgroundColor: props.bgColor || 'transparent',
             marginBottom: props.marginBottom || 0,
             paddingBottom: props.paddingBottom || 0,
         }}>

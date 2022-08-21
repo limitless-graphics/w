@@ -11,14 +11,36 @@ export default function AboutUs() {
     return (
         <>
             <NavBar />
-            <Card>
-                <img width={400} src={aboutUsSvg} alt='nothing' />
+            <div style={{
+                display: 'flex',
+                justifyContent: 'end',
+                alignItems: 'start',
+            }}>
+                <div style={{
+                    // backgroundColor: 'red',
+                    width: '100%',
+                    height: '100%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                }}>
+
+                    <img src={aboutUsSvg} alt='nothing'
+                        style={{
+                            width: 300,
+                            flex: '0 1 500px',
+                            marginTop: 40,
+                        }}
+                    />
+                </div>
                 <main style={{
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'flex-end',
                     paddingRight: 15,
                     fontFamily: 'Almarai, sans-serif',
+                    flex: '1 1 300px',
+                    width: '100%',
+                    minWidth: 600,
                 }}>
 
                     <h1>من نحن؟</h1>
@@ -56,7 +78,7 @@ export default function AboutUs() {
                         </p>
                     </article>
                 </main>
-            </Card>
+            </div>
             <Footer />
         </>
     )
