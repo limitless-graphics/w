@@ -14,7 +14,7 @@ export default function LandingPage() {
                 <div className='landing-page-text-div' style={{ order: 1, }}>
                     <h1 className='descriptive-text'>التصميم هو <span className='descriptive-text' style={{ color: 'darkorange' }}>السر</span></h1>
                     <h2 style={{ color: '#471601' }}>للاعمال و المشاريع الناجحة</h2>
-                    <Link to='order-design' className='order-button'> اطلب تصميم </Link>
+                    <Link to='services' className='order-button'> اطلب تصميم </Link>
                 </div>
                 <img style={{ marginTop: 40, backgroundColor: 'transparent', minWidth: 100, flex: '2 1 200px', maxWidth: 600 }} src={LandingSvgImg} alt={'limitless graphics'} />
             </WideCard >

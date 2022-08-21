@@ -64,14 +64,29 @@ export default function Services() {
                             </p>
                         </div>
                     </Card>
-                    <Card title={'Social media post'} >
+                    <Card centerTitle={'تصميم بطاقة عمل'} description={'تصميم بطاقة عمل احترافية تعكس مشروعك'} title={'Bisuness card'} >
 
                     </Card>
-                    <Card title={'Ad banner'} >
-
+                    <Card
+                        centerTitle={'تصميم إعلان'}
+                        description={'إنشاء إعلان ملصق إحترافي'}
+                        title={'Ad banner'}
+                        finalFiles=' : الملفات النهائية'
+                    >
+                        <p>
+                            ملف .AI / .PSD <br />
+                            ملف .JPG <br />
+                            ملف .PNG <br />
+                            ملف .PDF <br />
+                        </p>
                     </Card>
-                    <Card title={'Bisuness card'} >
-
+                    <Card
+                        centerTitle='اطلب تصميمك الخاص'
+                        description='يمكنك طلب التصميم الذي تريد في هدا الخيار'
+                        title='تصميم خاص'
+                        finalFiles=' : الملفات المسلمة'
+                    >
+                        <h4>مخصصة</h4>
                     </Card>
 
                 </div>
@@ -91,7 +106,11 @@ function Card(props) {
             <p style={{ fontSize: 12 }}>
                 {props.description}
             </p>
-            <button className='contact-us-action-button'>اطلب الان</button>
+            <button className='contact-us-action-button'
+                onClick={() => {
+                    window.open(`https://wa.me/212682536808?text=${props.title}`.replace(' ', '%20'));
+                }}
+            >اطلب الان</button>
             <div style={{ textAlign: 'center' }}>
                 <h5>{props.finalFiles}</h5>
                 {props.children}

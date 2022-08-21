@@ -33,7 +33,7 @@ export default function AboutUs() {
                             <li style={{ borderBottom: '1px solid black' }}>'Brand identity'</li>
                             <li style={{ borderBottom: '1px solid black' }}>...المزيد</li>
                         </ul>
-                        <Link to='/order-design'><strong>اطلب تصميم</strong></Link><br />
+                        <Link to='/services'><strong>اطلب تصميم</strong></Link><br />
                         وجب التنويه ان خدماتنا تتوزع بشكل اساسي حول الانترنت<br />
                         نستلم طلب التصميم عبر الانترنت بطرق مختلفة مثال (واتساب), ونرسل التصميم النهائي عبر الانترنت مثال (الايميل)
                         <br />
