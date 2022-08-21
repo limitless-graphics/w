@@ -33,7 +33,7 @@ a {
 }
 
 .order-card:hover {
-  background: white;
+  background: rgb(250, 250, 250);
   box-shadow: 15px 15px 0px #471601;
   border-color: #471601;
   border: 1px solid #471601;

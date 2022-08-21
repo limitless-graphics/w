@@ -15,12 +15,13 @@ export default function WideCard(props) {
             paddingBottom: props.paddingBottom || 0,
         }}>
             <div style={{
-                backgroundColor: 'transparent',
+                // backgroundColor: 'red',
                 display: 'flex',
                 flexWrap: 'wrap',
                 justifyContent: 'center',
                 height: 'auto',
-                width: '80%',
+                // width: '80%',
+                width: '100%',
                 marginTop: 15,
                 gap: '10%',
             }}>

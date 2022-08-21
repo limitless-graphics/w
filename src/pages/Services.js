@@ -91,6 +91,7 @@ export default function Services() {
                         description={'إنشاء إعلان ملصق إحترافي'}
                         title={'Ad banner'}
                         finalFiles=' : الملفات النهائية'
+                        photo='adBanner.png'
                     >
                         <p>
                             ملف .AI / .PSD <br />
@@ -117,8 +118,6 @@ export default function Services() {
 }
 function Card(props) {
 
-    let cardImage = 'logo.png'
-
     function photoWidth() {
         let width = 0;
         if (props.photo === 'logo.png') {
@@ -129,7 +128,7 @@ function Card(props) {
     return (
         <div className='order-card'>
             <h3 style={{ fontSize: 15, color: 'black' || '#f8931f' }}>{props.title}</h3>
-            <div style={{ overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 10, backgroundColor: 'white', height: 150, width: 150 }}>
+            <div style={{ overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 10, backgroundColor: 'transparent', height: 150, width: 150 }}>
                 <img width={photoWidth()} src={require(`../assets/${props.photo || 'logo.png'}`)} alt='limitless graphics logo' />
             </div>
             <h3 style={{ textDecoration: 'underline' }}>{props.centerTitle || 'تصميم مناسب'}</h3>
