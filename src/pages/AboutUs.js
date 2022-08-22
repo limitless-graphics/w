@@ -2,9 +2,9 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
-import whatsappIcon from '../assets/whatsapp-icon.svg'
-import fbIcon from '../assets/facebook-icon.svg'
-import Card from '../components/WideCard'
+import { ReactComponent as Logo1 } from '../assets/whatsapp-icon.svg'
+import { ReactComponent as Logo2 } from '../assets/facebook-icon.svg'
+import { ReactComponent as Logo3 } from '../assets/facebook-messenger.svg'
 import aboutUsSvg from '../assets/aboutUs.svg'
 
 export default function AboutUs() {
@@ -23,7 +23,6 @@ export default function AboutUs() {
                     display: 'flex',
                     justifyContent: 'center',
                 }}>
-
                     <img src={aboutUsSvg} alt='nothing'
                         style={{
                             width: 300,
@@ -67,14 +66,19 @@ export default function AboutUs() {
                             : للتواصل معنا والاستفسار
                             <br />
                             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'end', gap: 20 }}>
-                                <img onClick={() => {
-                                    window.open('https://wa.me/212682536808?text=test');
-                                }} className='clickable-img' width={40} src={whatsappIcon} alt='whtsp' />
-                                <img onClick={() => {
-                                    window.open('https://www.facebook.com/limitless.graphics.media');
-                                }} className='clickable-img' width={40} src={fbIcon} alt='fb' />
-                            </div>
 
+                                <a href='https://m.me/limitless.graphics.media' target='_blank' rel="noreferrer" >
+                                    <Logo2 width={40} fill='blue' />
+                                </a>
+                                <a href='https://wa.me/212682536808?text=more%20info%20please.' target='_blank' rel="noreferrer">
+                                    <Logo1 width={40} fill='green' />
+                                </a>
+
+                                <a href='https://m.me/limitless.graphics.media' target='_blank' rel="noreferrer" >
+                                    <Logo3 width={40} fill='#0f87ff' />
+                                </a>
+
+                            </div>
                         </p>
                     </article>
                 </main>
