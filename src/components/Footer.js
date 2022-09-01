@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { ReactComponent as Logo1 } from '../assets/whatsapp-icon.svg'
+import { ReactComponent as Logo2 } from '../assets/facebook-icon.svg'
+import { ReactComponent as Logo3 } from '../assets/facebook-messenger.svg'
 
 export default function Footer() {
     return (
@@ -54,6 +57,24 @@ function FooterBlock(props) {
             }}>
                 {props.paragraph}
             </p>}
+            {props.third && <h4 style={{ marginTop: 0, marginBottom: 5 }}>0682536808</h4>}
+            {props.third &&
+                <div>
+                    <div style={{ display: 'flex', justifyContent: 'right', gap: 20 }}>
+                        {/* <img width={30} src={facebookIcon} alt='fb' /> */}
+
+                        <a href='https://www.facebook.com/limitless.graphics.media' target='_blank' rel="noreferrer" >
+                            <Logo2 width={25} fill='white' />
+                        </a>
+                        <a href='https://wa.me/212682536808?text=more%20info%20please.' target='_blank' rel="noreferrer">
+                            <Logo1 width={25} fill='white' />
+                        </a>
+
+                        <a href='https://m.me/limitless.graphics.media' target='_blank' rel="noreferrer" >
+                            <Logo3 width={25} fill='white' />
+                        </a>
+                    </div>
+                </div>}
             {
                 props.first && <Link
                     style={{ position: 'relative', color: 'orange', }}

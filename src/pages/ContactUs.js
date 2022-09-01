@@ -5,7 +5,6 @@ import { ReactComponent as Logo1 } from '../assets/whatsapp-icon.svg'
 import { ReactComponent as Logo2 } from '../assets/facebook-icon.svg'
 import { ReactComponent as Logo3 } from '../assets/facebook-messenger.svg'
 import contactUsSvg from '../assets/contactUs.svg'
-import { Link } from 'react-router-dom'
 export default function OrderPage() {
     return (
         <>
