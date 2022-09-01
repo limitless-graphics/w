@@ -79,11 +79,12 @@ a {
 
 .footer {
   background-color: #293346;
-  height: 200px;
+  height: auto;
   width: 100%;
   margin-top: 80px;
-  display: 'flex';
+  display: flex;
   justify-content: center;
+  flex-wrap: 'wrap';
   align-items: 'center';
 }
 
