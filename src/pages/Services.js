@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
 import '../App.css'
 
+
+
+
 export default function Services() {
+    const thisPageContentHeight = 982;
+
+    useEffect(() => {
+        setTimeout(() => { window.scrollTo(0, 0) }, 100);
+    }, [])
     return (
-        <>
+        <div>
             <NavBar />
-            <main style={{ fontFamily: 'Almarai, sans-serif', textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <main style={{ paddingTop: 70, fontFamily: 'Almarai, sans-serif', textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <h1 style={{ marginBottom: 40 }}>: خدماتنا</h1>
                 <div style={{
                     backgroundColor: 'white',
@@ -17,9 +25,6 @@ export default function Services() {
                     flexWrap: 'wrap',
                     justifyContent: 'center',
                     alignItems: 'stretch',
-
-
-
                     gap: 30,
                 }}>
                     <Card centerTitle='تصميم لوغو'
@@ -112,8 +117,8 @@ export default function Services() {
 
                 </div>
             </main>
-            <Footer />
-        </>
+            <Footer thisPageContentHeight={thisPageContentHeight} />
+        </div>
     )
 }
 function Card(props) {

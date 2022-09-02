@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import { ReactComponent as Logo1 } from '../assets/whatsapp-icon.svg'
@@ -6,10 +6,17 @@ import { ReactComponent as Logo2 } from '../assets/facebook-icon.svg'
 import { ReactComponent as Logo3 } from '../assets/facebook-messenger.svg'
 import contactUsSvg from '../assets/contactUs.svg'
 export default function OrderPage() {
+
+    useEffect(() => {
+        setTimeout(() => { window.scrollTo(0, 0) }, 100);
+    }, [])
+
+
     return (
         <>
             <NavBar />
             <div style={{
+                paddingTop: 70,
                 display: 'flex',
                 gap: 30,
                 justifyContent: 'center',

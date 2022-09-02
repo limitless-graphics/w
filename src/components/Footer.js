@@ -1,12 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ReactComponent as Logo1 } from '../assets/whatsapp-icon.svg'
 import { ReactComponent as Logo2 } from '../assets/facebook-icon.svg'
 import { ReactComponent as Logo3 } from '../assets/facebook-messenger.svg'
 
-export default function Footer() {
+export default function Footer(props) {
+
+    const [absolute, setAbsolute] = useState(false);
+    window.onresize = (e) => {
+        if (window.innerHeight > props.thisPageContentHeight) {
+            setAbsolute(true);
+        } else {
+            setAbsolute(false);
+        }
+    }
+
     return (
-        <div className='footer'>
+        <div className='footer' style={{
+            position: absolute && 'fixed' || 'relative',
+            bottom: 0,
+        }}>
 
             <div style={{
                 width: '100%',
