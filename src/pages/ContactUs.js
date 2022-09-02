@@ -7,6 +7,7 @@ import { ReactComponent as Logo3 } from '../assets/facebook-messenger.svg'
 import contactUsSvg from '../assets/contactUs.svg'
 export default function OrderPage() {
 
+    const thisPageContentHeight = 800;
     useEffect(() => {
         setTimeout(() => { window.scrollTo(0, 0) }, 100);
     }, [])
@@ -63,7 +64,7 @@ export default function OrderPage() {
                     maxWidth: 400
                 }} />
             </div>
-            <Footer />
+            <Footer thisPageContentHeight={thisPageContentHeight} />
         </>
     )
 }

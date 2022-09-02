@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ReactComponent as Logo1 } from '../assets/whatsapp-icon.svg'
 import { ReactComponent as Logo2 } from '../assets/facebook-icon.svg'
 import { ReactComponent as Logo3 } from '../assets/facebook-messenger.svg'
 
 export default function Footer(props) {
-
+    const [position, setPosition] = useState(window.innerHeight < 1000 ? 150 : 20);
     const [absolute, setAbsolute] = useState(false);
+    useEffect(() => {
+        // setAbsolute(true);
+    }, [])
     window.onresize = (e) => {
         if (window.innerHeight > props.thisPageContentHeight) {
             setAbsolute(true);
@@ -19,6 +22,7 @@ export default function Footer(props) {
         <div className='footer' style={{
             position: absolute && 'fixed' || 'relative',
             bottom: 0,
+            marginTop: position,
         }}>
 
             <div style={{

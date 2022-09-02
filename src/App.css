@@ -108,6 +108,20 @@ a:hover {
   color: red;
 }
 
+.portfolio-project-block {
+  background-color: rgb(240, 240, 240);
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-project-block:hover {
+  background-color: lightgray;
+
+}
 
 .order-button {
   color: white;
