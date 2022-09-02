@@ -7,11 +7,11 @@ export default function PortfolioPage() {
     const thisPageContentHeight = 600;
     const [projectWindow, setProjectWindow] = useState(false);
     const data = [
-        { id: 1, title: 'إعلان', img: 'somthing.png', subTitle: 'مشروع world this is subtitle.' },
-        { id: 2, title: 'لوغو', img: 'somthing.png', subTitle: 'مشروع world this is subtitle.' },
-        { id: 3, title: 'بطاقة عمل', img: 'somthing.png', subTitle: 'مشروع world this is subtitle.' },
-        { id: 4, title: 'هوية بصرية', img: 'somthing.png', subTitle: 'مشروع world this is subtitle.' },
-        { id: 4, title: 'تغليف', img: 'somthing.png', subTitle: 'مشروع world this is subtitle.' },
+        { id: 1, title: 'إعلان', img: 'ad.jpg', subTitle: 'مشروع world this is subtitle.' },
+        { id: 2, title: 'لوغو', img: 'ad2.jpg', subTitle: 'مشروع world this is subtitle.' },
+        { id: 3, title: 'بطاقة عمل', img: 'ad3.jpg', subTitle: 'مشروع world this is subtitle.' },
+        { id: 4, title: 'هوية بصرية', img: 'logo2.jpg', subTitle: 'مشروع world this is subtitle.' },
+        { id: 4, title: 'تغليف', img: 'ad2.jpg', subTitle: 'مشروع world this is subtitle.' },
     ]
     return (
         <div style={{ paddingTop: 70, textAlign: 'right', fontFamily: 'Almarai , sans-serif' }} >
@@ -60,7 +60,8 @@ function ProjectWindow(props) {
             zIndex: 200,
             borderRadius: 10,
             display: 'flex',
-            justifyContent: 'space-around'
+            justifyContent: 'space-around',
+            overflow: 'hidden'
         }}>
             <div
                 onClick={() => {
@@ -71,11 +72,11 @@ function ProjectWindow(props) {
                     position: 'absolute', right: 20, top: 20, color: 'gray', //border: '2px solid lightgray',
                 }}>X</div>
             <div style={{
-                backgroundColor: 'lightgray',
+                // backgroundColor: 'lightgray',
                 width: 1000,
                 aspectRatio: 1
             }}>
-
+                <img src={require(`../assets/portfolio/${props.data.img}`)} height={'100%'} style={{ left: 0, position: 'absolute' }} alt='ad' />
             </div>
             <div style={{
 
