@@ -1,28 +1,34 @@
 {
   "files": {
-    "main.css": "/w/static/css/main.135920a8.css",
-    "main.js": "/w/static/js/main.6993370d.js",
+    "main.css": "/w/static/css/main.2d6096d1.css",
+    "main.js": "/w/static/js/main.ee9aa959.js",
     "static/js/787.866c570c.chunk.js": "/w/static/js/787.866c570c.chunk.js",
     "static/media/landingPageImage2.png": "/w/static/media/landingPageImage2.590558f82a8ec4d3b898.png",
+    "static/media/ad.jpg": "/w/static/media/ad.6690752cc6c9e8b3b90b.jpg",
     "static/media/landingPageImage1.png": "/w/static/media/landingPageImage1.5ca50297f54d7b1ba84f.png",
     "static/media/designerGirl.jpg": "/w/static/media/designerGirl.03b64ebb5bc0783f5b1a.jpg",
+    "static/media/ad3.jpg": "/w/static/media/ad3.942a4bb1fa9185d67047.jpg",
+    "static/media/ad2.jpg": "/w/static/media/ad2.cf8b9ddf79a6c8b20580.jpg",
+    "static/media/logo2.jpg": "/w/static/media/logo2.e44aa6a34abd8451d3dd.jpg",
     "static/media/socialMediaAd.png": "/w/static/media/socialMediaAd.00c1ecddeca2a15666be.png",
     "static/media/desigerGirl.svg": "/w/static/media/desigerGirl.f486d9fa7c5b9748c15e746ffbc18c5d.svg",
     "static/media/investments.svg": "/w/static/media/investments.d66b0fd4d2d9ce7fde9ee379e8e443e1.svg",
     "static/media/aboutUs.svg": "/w/static/media/aboutUs.8bf21a4ded8e5b97277cb09bc7a73db5.svg",
     "static/media/brandIdentity.png": "/w/static/media/brandIdentity.c922894684ce7dd04603.png",
+    "static/media/contactUs.svg": "/w/static/media/contactUs.a972836371ca043db177211eb20cc242.svg",
     "static/media/logo.png": "/w/static/media/logo.50e9bce60fd80e56f4ea.png",
     "static/media/bisunessCard.png": "/w/static/media/bisunessCard.017bb4ce954bd4793b53.png",
     "static/media/customDesign.png": "/w/static/media/customDesign.15cf2fe0afc3373d5056.png",
     "static/media/whatsapp-icon.svg": "/w/static/media/whatsapp-icon.6d01f29fb9d9bb2a0560dbb174f967cd.svg",
+    "static/media/facebook-messenger.svg": "/w/static/media/facebook-messenger.e26ccb007b206998a995f046994da326.svg",
     "index.html": "/w/index.html",
     "static/media/facebook-icon.svg": "/w/static/media/facebook-icon.f968c4bae61762b90b5e1041498e425b.svg",
-    "main.135920a8.css.map": "/w/static/css/main.135920a8.css.map",
-    "main.6993370d.js.map": "/w/static/js/main.6993370d.js.map",
+    "main.2d6096d1.css.map": "/w/static/css/main.2d6096d1.css.map",
+    "main.ee9aa959.js.map": "/w/static/js/main.ee9aa959.js.map",
     "787.866c570c.chunk.js.map": "/w/static/js/787.866c570c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.135920a8.css",
-    "static/js/main.6993370d.js"
+    "static/css/main.2d6096d1.css",
+    "static/js/main.ee9aa959.js"
   ]
 }
