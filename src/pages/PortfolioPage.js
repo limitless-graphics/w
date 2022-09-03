@@ -7,11 +7,11 @@ export default function PortfolioPage() {
     const thisPageContentHeight = 600;
     const [projectWindow, setProjectWindow] = useState(false);
     const data = [
-        { id: 1, title: 'إعلان', img: 'ad.jpg', subTitle: 'مشروع world this is subtitle.' },
-        { id: 2, title: 'لوغو', img: 'ad2.jpg', subTitle: 'مشروع world this is subtitle.' },
-        { id: 3, title: 'بطاقة عمل', img: 'ad3.jpg', subTitle: 'مشروع world this is subtitle.' },
-        { id: 4, title: 'هوية بصرية', img: 'logo2.jpg', subTitle: 'مشروع world this is subtitle.' },
-        { id: 4, title: 'تغليف', img: 'ad2.jpg', subTitle: 'مشروع world this is subtitle.' },
+        { id: 1, title: 'نمودج إعلان', img: 'ad.jpg', subTitle: 'مشروع world this is subtitle.' },
+        { id: 2, title: 'نمودج لوغو', img: 'ad2.jpg', subTitle: 'مشروع world this is subtitle.' },
+        { id: 3, title: 'نمودج بطاقة عمل', img: 'ad3.jpg', subTitle: 'مشروع world this is subtitle.' },
+        { id: 4, title: 'نمودج هوية بصرية', img: 'logo2.jpg', subTitle: 'مشروع world this is subtitle.' },
+        { id: 4, title: 'نمودج تغليف', img: 'ad2.jpg', subTitle: 'مشروع world this is subtitle.' },
     ]
     return (
         <div style={{ paddingTop: 70, textAlign: 'right', fontFamily: 'Almarai , sans-serif' }} >
@@ -37,46 +37,39 @@ function ProjectBlock(props) {
             props.visibility(props.id);
         }}
             className='portfolio-project-block'>
-            <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', position: 'absolute', bottom: 0 }}>
-                <h3 style={{ backgroundColor: 'rgba(255,255,255,0.9)', padding: '0px 10px', borderRadius: 5, margin: 5 }}>{props.title}</h3>
+
+            <div style={{ height: '100%', width: '110%', }}>
+                <img className='portfolio-block-image' src={require('../assets/portfolio/' + props.img)} alt='proj' />
+            </div>
+
+            <div style={{ position: 'absolute', bottom: 10, height: 'auto', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', }}>
+                <h3 style={{ backgroundColor: 'rgba(255,255,255,0.9)', padding: '0px 10px', borderRadius: 5, margin: 5, }}>{props.title}</h3>
                 <h3 style={{ backgroundColor: 'rgba(255,255,255,0.9)', padding: '0px 10px', borderRadius: 5, margin: 5, textAlign: 'center', }}>{props.subTitle}</h3>
             </div>
+
         </div>
     )
 }
+
 function ProjectWindow(props) {
     return (
-        <div style={{
-            backgroundColor: 'white',
-            boxShadow: '0px 0px 25px rgb(0,0,0,0.3)',
-            height: '80%',
-            width: '90%',
-            maxHeight: '1000',
-            maxWidth: '2000',
-            position: 'absolute',
-            left: '50%',
-            top: '50%',
-            transform: 'translate(-50%, -50%)',
-            zIndex: 200,
-            borderRadius: 10,
-            display: 'flex',
-            justifyContent: 'space-around',
-            overflow: 'hidden'
-        }}>
+        <div
+            className='portfolio-window'>
             <div
                 onClick={() => {
                     props.visibility(false);
                 }}
-                style={{
-                    display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: 50, backgroundColor: 'rgb(240,240,240)', height: 30, width: 30,
-                    position: 'absolute', right: 20, top: 20, color: 'gray', //border: '2px solid lightgray',
-                }}>X</div>
+                className='close-button'
+            >X</div>
             <div style={{
                 // backgroundColor: 'lightgray',
                 width: 1000,
                 aspectRatio: 1
             }}>
-                <img src={require(`../assets/portfolio/${props.data.img}`)} height={'100%'} style={{ left: 0, position: 'absolute' }} alt='ad' />
+                <img onClick={() => {
+                    alert('yes');
+                }}
+                    src={require(`../assets/portfolio/${props.data.img}`)} height={'100%'} style={{ left: 0, position: 'absolute', }} alt='ad' />
             </div>
             <div style={{
 

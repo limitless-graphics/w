@@ -108,6 +108,28 @@ a:hover {
   color: red;
 }
 
+.close-button {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: gray;
+}
+
+.close-button:hover {
+  background-color: gray;
+  cursor: pointer;
+  color: white;
+
+}
+
 .portfolio-project-block {
   background-color: rgb(240, 240, 240);
   position: relative;
@@ -116,11 +138,52 @@ a:hover {
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  align-Items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.portfolio-window {
+  box-shadow: 0px 0px 25px rgb(0, 0, 0, 0.3);
+  height: 80%;
+  width: 90%;
+  max-height: 1000px;
+  max-width: 2000px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  background-color: white;
+}
+
+.portfolio-window::after {
+  background-color: black;
+  position: absolute;
+  width: 10000px;
+  height: 10000px;
+  top: 0;
+  left: 0;
 }
 
 .portfolio-project-block:hover {
   background-color: lightgray;
+  cursor: pointer;
 
+}
+
+.portfolio-block-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio-block-image:hover {
+  opacity: 0.5;
 }
 
 .order-button {

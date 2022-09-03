@@ -32,6 +32,13 @@ export default function LandingPage() {
                     </div>
                     <img src={InvestmentSvg} style={{ marginTop: 40, backgroundColor: 'transparent', minWidth: 100, flex: '2 1 200px', maxWidth: 500 }} alt='investment svg' />
                 </WideCard>
+                <WideCard>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+
+                        <h1 style={{ marginBottom: 0 }}>: وضعو تقتهم بنا</h1>
+                        <img style={{ width: '100%' }} src={require('../assets/credantialsPartners.jpg')} alt='partners' />
+                    </div>
+                </WideCard>
                 <Footer thisPageContentHeight={thisPageContentHeight} />
             </div >
         </>
