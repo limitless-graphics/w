@@ -21,6 +21,7 @@ export default function OrderPage() {
                 display: 'flex',
                 gap: 30,
                 justifyContent: 'center',
+                flexWrap: 'wrap',
 
             }}>
                 <main style={{
@@ -61,7 +62,9 @@ export default function OrderPage() {
                 <img src={contactUsSvg} alt='svg' style={{
                     width: 300,
                     flex: '1 1 200px',
-                    maxWidth: 400
+                    maxWidth: 300,
+                    marginTop: 30,
+
                 }} />
             </div>
             <Footer thisPageContentHeight={thisPageContentHeight} />

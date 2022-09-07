@@ -1,7 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Readex+Pro:wght@200;400;600&family=Tajawal:wght@200;500;700;900&display=swap');
 
+.portfolio-project-window::-webkit-scrollbar {
+  width: 5px;
+  /* width of the entire scrollbar */
+}
+
+.portfolio-project-window::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+
+.portfolio-project-window::-webkit-scrollbar-thumb {
+  background-color: gray;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  /* border: 1px solid white; */
+  /* creates padding around scroll thumb */
+}
+
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 .App {
@@ -64,19 +83,110 @@ a {
   cursor: pointer;
 }
 
+.portfolio-project-window {
+  height: 80%;
+  width: 90%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 111;
+  border-radius: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.portfolio-project-window-img-container {
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  height: auto;
+  flex: 1 1 300px;
+}
+
+.portfolio-project-window-img:hover {
+  cursor: pointer;
+}
+
+.portfolio-project-window-text {
+  padding-right: 30px;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  flex: 1 1 300px;
+}
+
 .landing-page-text-div {
   order: 0;
   min-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: 'center';
   flex: 0 1 200px;
+}
+
+.portfolio-project-window-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 110;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.portfolio-project-window-slideshow {
+  background-color: black;
+  height: 100%;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.portfolio-project-window-slideshow>div {
+  background-color: rgba(70, 70, 70, 0.7);
+  width: 100%;
+  height: auto;
+  flex: 1 1 200px;
+}
+
+.black-drop {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 @media(max-width: 710px) {
   .landing-page-text-div {
     order: 1;
+  }
+
+  .portfolio-project-window-img {
+    display: block;
+    max-width: 100%;
+    max-height: 905px;
+    width: auto;
+    height: auto;
+    flex: 1 1 300px;
+    width: 100px;
+  }
+
+  .portfolio-project-window {
+    height: 90%;
   }
 }
 
@@ -149,16 +259,16 @@ a:hover {
   width: 90%;
   max-height: 1000px;
   max-width: 2000px;
-  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 200;
   border-radius: 10px;
   display: flex;
-  justify-content: space-around;
-  overflow: hidden;
-  background-color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: red;
+  overFlow: scroll;
 }
 
 .portfolio-window::after {

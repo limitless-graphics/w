@@ -11,20 +11,26 @@ export default function Footer(props) {
         // setAbsolute(true);
     }, [])
     window.onresize = (e) => {
-        if (window.innerHeight > props.thisPageContentHeight) {
+        if (props.alwaysNormal) return;
+        if (absolute && window.innerHeight > window.innerWidth) {
+            setAbsolute(false);
+        }
+        else if (!window.innerHeight > window.innerWidth && window.innerHeight > props.thisPageContentHeight) {
             setAbsolute(true);
-        } else {
+        }
+        else {
             setAbsolute(false);
         }
     }
+    if (absolute && window.innerHeight > window.innerWidth) { setAbsolute(false); console.log('hello world!') };
 
     return (
         <div className='footer' style={{
             position: absolute && 'fixed' || 'relative',
             bottom: 0,
-            marginTop: position,
+            marginTop: 40,
+            backgroundColor: '#471601',
         }}>
-
             <div style={{
                 width: '100%',
                 height: 'auto',

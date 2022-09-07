@@ -22,6 +22,7 @@ export default function NavBar(props) {
             boxShadow: shadow && '0px 10px 5px rgba(0,0,0,0.1)' || 'none',
             transition: '150ms',
             top: 0,
+            overflow: 'hidden',
         }}>
             <Link to='/'>
                 <img style={{ margin: 10, width: 40, height: 50 }} src={require('../assets/logo.png')} alt={'limitless logo'} />
