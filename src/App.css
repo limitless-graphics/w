@@ -25,12 +25,49 @@ html {
 
 .App {
   text-align: center;
-  font-family: 'Almarai', sans-serif;
+  font-family: Almarai, sans-serif;
 }
 
 a {
   text-decoration: none;
   color: #471601;
+}
+
+.nav-bar {
+  z-index: 10;
+  position: fixed;
+  height: 70;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 150ms;
+  top: 0;
+  overflow: hidden;
+}
+
+.nav-bar-links {
+  font-family: Almarai, sans-serif;
+  display: flex;
+  gap: 45px;
+  justify-self: end;
+  background-color: white;
+  margin-right: 20px
+}
+
+.burger-menu-button {
+  /* background-color: red; */
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 40px;
+  width: 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: 20px;
 }
 
 .order-card {
@@ -101,7 +138,8 @@ a {
 }
 
 .portfolio-project-window-img-container {
-  background-color: rgb(30, 30, 30);
+  /* background-color: rgb(30, 30, 30); */
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,8 +167,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: 'center';
+  justify-content: center;
   flex: 0 1 200px;
+  /* background-color: red; */
 }
 
 .portfolio-project-window-outer {
@@ -150,14 +189,20 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 10px;
+  overflow: hidden;
 }
 
 .portfolio-project-window-slideshow>div {
-  background-color: rgba(70, 70, 70, 0.7);
-  width: 100%;
+  background-color: black;
+  width: 90%;
   height: auto;
   flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .black-drop {
@@ -171,6 +216,29 @@ a {
 }
 
 @media(max-width: 710px) {
+  .burger-menu-button {
+    display: flex;
+  }
+
+  .nav-bar {
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 2px solid black; */
+    flex-direction: column;
+  }
+
+  .logo-container {}
+
+  .nav-bar-links {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 0px;
+    border-bottom: 2px solid gray;
+    display: none;
+  }
+
   .landing-page-text-div {
     order: 1;
   }
@@ -188,6 +256,18 @@ a {
   .portfolio-project-window {
     height: 90%;
   }
+
+  .portfolio-project-window-slideshow {
+    flex-direction: row;
+    height: 15%;
+    width: 100%;
+  }
+
+  .portfolio-project-window-slideshow>div {
+    background-color: black;
+    height: 100%;
+    flex: 1 1 100px;
+  }
 }
 
 
@@ -198,14 +278,14 @@ a {
   margin-top: 80px;
   display: flex;
   justify-content: center;
-  flex-wrap: 'wrap';
-  align-items: 'center';
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .descriptive-text {
   font-size: 45px;
   margin-bottom: 0;
-  color: '#471601';
+  color: #471601;
 }
 
 a:hover {
@@ -306,7 +386,7 @@ a:hover {
   border: none;
   border-bottom: 5px solid #471601;
   padding: 10px 20px;
-  font-family: 'Almarai', sans-serif;
+  font-family: Almarai, sans-serif;
   transition: 250ms;
 }
 

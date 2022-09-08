@@ -39,7 +39,7 @@ export default function OrderPage() {
                         . يمكنكم التواصل معنا عبر الهاتف او وتساب او صفحتنا على الفيسبوك <br />
                         : اضغط على الروابط في الاسفل <br />
                         <br />
-                        <div style={{ display: 'flex', justifyContent: 'right', gap: 20 }}>
+                        <span style={{ display: 'flex', justifyContent: 'right', gap: 20 }}>
                             {/* <img width={30} src={facebookIcon} alt='fb' /> */}
 
                             <a href='https://www.facebook.com/limitless.graphics.media' target='_blank' rel="noreferrer" >
@@ -52,7 +52,7 @@ export default function OrderPage() {
                             <a href='https://m.me/limitless.graphics.media' target='_blank' rel="noreferrer" >
                                 <Logo3 width={30} fill='#0f87ff' />
                             </a>
-                        </div>
+                        </span>
                         <br />
                         phone: <strong>0682536808</strong> <br />
                         facebook: <strong>fb.com/limitless.graphics.media</strong> <br />

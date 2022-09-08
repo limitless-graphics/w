@@ -68,24 +68,26 @@ export default function AboutUs() {
                                 نحن مجموعة من المصمميم المغاربة اصحاب خبرة و مهارة يشهد بها زبناءنا
                                 <br /><br />تتمحور مهمتنا في تطوير الهوية البصرية للشركات و المشاريع الصغرا بأثمنة في متناول الجميع
                                 <br /> :  تشمل خدماتنا انشاء
-                                <ul style={{ alignSelf: 'end', backgroundColor: 'rgba(0,0,0,0.1)', paddingLeft: 50, paddingRight: 50, paddingTop: 30, paddingBottom: 30 }}>
-                                    <li style={{ borderBottom: '1px solid black' }}>'Logo'</li>
-                                    <li style={{ borderBottom: '1px solid black' }}>'Filer'</li>
-                                    <li style={{ borderBottom: '1px solid black' }}>'bisuness card'</li>
-                                    <li style={{ borderBottom: '1px solid black' }}>'Ad banner'</li>
-                                    <li style={{ borderBottom: '1px solid black' }}>'Social media creatives'</li>
-                                    <li style={{ borderBottom: '1px solid black' }}>'Social media ad' </li>
-                                    <li style={{ borderBottom: '1px solid black' }}>'Social media posts'</li>
-                                    <li style={{ borderBottom: '1px solid black' }}>'Brand identity'</li>
-                                    <li style={{ borderBottom: '1px solid black' }}>...المزيد</li>
-                                </ul>
+                            </p>
+                            <ul style={{ alignSelf: 'end', backgroundColor: 'rgba(0,0,0,0.1)', paddingLeft: 50, paddingRight: 50, paddingTop: 30, paddingBottom: 30 }}>
+                                <li style={{ borderBottom: '1px solid black' }}>'Logo'</li>
+                                <li style={{ borderBottom: '1px solid black' }}>'Filer'</li>
+                                <li style={{ borderBottom: '1px solid black' }}>'bisuness card'</li>
+                                <li style={{ borderBottom: '1px solid black' }}>'Ad banner'</li>
+                                <li style={{ borderBottom: '1px solid black' }}>'Social media creatives'</li>
+                                <li style={{ borderBottom: '1px solid black' }}>'Social media ad' </li>
+                                <li style={{ borderBottom: '1px solid black' }}>'Social media posts'</li>
+                                <li style={{ borderBottom: '1px solid black' }}>'Brand identity'</li>
+                                <li style={{ borderBottom: '1px solid black' }}>...المزيد</li>
+                            </ul>
+                            <p style={{ textAlign: 'right' }}>
                                 <Link to='/services'><strong>اطلب تصميم</strong></Link><br />
                                 وجب التنويه ان خدماتنا تتوزع بشكل اساسي حول الانترنت<br />
                                 نستلم طلب التصميم عبر الانترنت بطرق مختلفة مثال (واتساب), ونرسل التصميم النهائي عبر الانترنت مثال (الايميل)
                                 <br />
                                 : للتواصل معنا والاستفسار
                                 <br />
-                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'end', gap: 20 }}>
+                                <span style={{ display: 'flex', alignItems: 'center', justifyContent: 'end', gap: 20, marginTop: 20 }}>
 
                                     <a href='https://m.me/limitless.graphics.media' target='_blank' rel="noreferrer" >
                                         <Logo2 width={40} fill='blue' />
@@ -93,12 +95,11 @@ export default function AboutUs() {
                                     <a href='https://wa.me/212682536808?text=more%20info%20please.' target='_blank' rel="noreferrer">
                                         <Logo1 width={40} fill='green' />
                                     </a>
-
                                     <a href='https://m.me/limitless.graphics.media' target='_blank' rel="noreferrer" >
                                         <Logo3 width={40} fill='#0f87ff' />
                                     </a>
 
-                                </div>
+                                </span>
                             </p>
                         </article>
                     </main>
