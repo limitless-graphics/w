@@ -29,7 +29,7 @@ export default function NavBar(props) {
             }}
                 className='burger-menu-button'
                 style={{ fontFamily: 'Almarai, sans-serif', fontSize: 30 }}
-            >|||</div>
+            >☰</div>
             <div className='logo-container'>
                 <Link to='/'>
                     <img style={{ margin: 10, width: 40, height: 50 }} src={require('../assets/logo.png')} alt={'limitless logo'} />

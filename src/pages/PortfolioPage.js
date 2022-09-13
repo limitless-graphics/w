@@ -6,19 +6,20 @@ import '../App.css'
 export default function PortfolioPage() {
     const thisPageContentHeight = 600;
     const [projectWindow, setProjectWindow] = useState(false);
+
     // const [showBigPicture, setShowBigPicture] = useState(false);
 
     if (projectWindow) document.body.style.overflow = 'hidden';
     else document.body.style.overflow = 'scroll';
 
     const data = [
-        { id: 1, title: 'نمودج إعلان', img: 'ad.jpg', subTitle: 'مشروع world this is subtitle.', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', 'thirdad.jpg'] },
-        { id: 2, title: 'نمودج لوغو', img: 'secondad.jpg', subTitle: 'مشروع world this is subtitle.', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', 'thirdad.jpg'] },
-        { id: 3, title: 'نمودج بطاقة عمل', img: 'thirdad.jpg', subTitle: 'مشروع world this is subtitle.', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', 'thirdad.jpg'] },
-        { id: 4, title: 'نمودج هوية بصرية', img: 'ad.jpg', subTitle: 'مشروع world this is subtitle.', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', 'thirdad.jpg'] },
+        { id: 1, title: 'نمودج إعلان', img: 'ad.jpg', subTitle: 'عينة من الاعلانات التي أنشأناها', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', '$thirdad.jpg'] },
+        { id: 2, title: 'نمودج لوغو', img: 'logoGate.jpg', subTitle: 'عينة من الشعارات التي أنشأناها', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['logo3.jpg', 'logo1.jpg', 'logo2.jpg'] },
+        { id: 3, title: 'نمودج بطاقة عمل', img: 'bisunessCard2.jpg', subTitle: 'عينة من بطاقات الهوية التي أنشأناها', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['bisunessCard2.jpg', 'bisunessCard.jpg', '$thirdad.jpg'] },
+        { id: 4, title: 'نمودج هوية بصرية', img: 'ad.jpg', subTitle: 'عينة هوية بصرية أنشأناها لأحد زبائننا', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', '$thirdad.jpg'] },
         {
-            id: 5, title: 'نمودج تغليف', img: 'embalage.jpg', subTitle: 'مشروع world this is subtitle.', description: `هذا النمودج من احد اعمالنا لشركة ‘بيلاتوس‘ شركة متخصصة في مواد التجميل والعناية بالبشرة 
-        في هذا المشروع قمنا بإعادة تصميم أغلفة المنتجات لتصبح اكثر احترافية و مصدقية لتقوية علاقة الشركة مع عملائها` , slideshowImages: ['ad.jpg', 'secondad.jpg', 'thirdad.jpg']
+            id: 5, title: 'نمودج تغليف', img: 'embalage.jpg', subTitle: 'عينة من تصميم تغليف لاحد عملائنا', description: `هذا النمودج من احد اعمالنا لشركة ‘بيلاتوس‘ شركة متخصصة في مواد التجميل والعناية بالبشرة 
+        في هذا المشروع قمنا بإعادة تصميم أغلفة المنتجات لتصبح اكثر احترافية و مصدقية لتقوية علاقة الشركة مع عملائها` , slideshowImages: ['embalage.jpg', 'oldEmbalage.jpg', 'embalageNew.jpg']
         },
     ]
     return (
@@ -67,13 +68,16 @@ function ProjectWindow(props) {
     const [displayedImg, setDisplayedImg] = useState(props.data.slideshowImages[0].replace('.jpg', ''));
     const [showBigPicture, setShowBigPicture] = useState(false);
 
+    let styles = { display: 'block', width: '100%', }
+    if (displayedImg[0] === '$') styles = { width: '80%' };
+
     return (
         <div className='portfolio-project-window-outer' >
             {showBigPicture && <BigPicture img={displayedImg} setBigPicture={setShowBigPicture} />}
             <div onClick={() => { props.visibility(false); }} className='black-drop'></div>
             <div className='portfolio-project-window'>
                 <div className='portfolio-project-window-img-container'>
-                    <img style={{ display: 'block', width: '100%', }} className='portfolio-project-window-img' src={require(`../assets/portfolio/${displayedImg}.jpg`)} alt='img'
+                    <img style={styles} className='portfolio-project-window-img' src={require(`../assets/portfolio/${displayedImg}.jpg`)} alt='img'
                         onClick={() => {
                             setShowBigPicture(true);
                         }}
@@ -105,17 +109,26 @@ function ProjectWindow(props) {
     )
 }
 function BigPicture(props) {
+    let styles = {
+        display: 'block',
+        marginLeft: 'auto',
+        marginRight: 'auto'
+    };
+    window.innerHeight > window.innerWidth ? styles = { width: '100%', maxHeight: 'auto' } : styles = { width: 'auto', height: '100%' };
+
     return (
         <div style={{
-            display: 'flex', justifyContent: 'center', position: 'fixed',
+            position: 'fixed', display: 'flex', justifyContent: 'center',
             zIndex: 1000, height: '100vh', width: '100vw', backgroundColor: 'rgba(0,0,0,0.9)',
         }}
             onClick={() => {
                 props.setBigPicture(false);
             }}
         >
-            <div style={{ width: 30, height: 30, position: 'absolute', top: 10, right: 10, backgroundColor: 'white', borderRadius: 50, textAlign: 'center' }}>x</div>
-            <img height={'100%'} src={require('../assets/portfolio/' + props.img + '.jpg')} alt='preview' />
+            <div style={{ display: 'flex', width: 30, height: 30, position: 'absolute', top: 10, right: 10, backgroundColor: 'white', borderRadius: 50, justifyContent: 'center', alignItems: 'center' }}>x</div>
+            <div>
+                <img style={styles} src={require('../assets/portfolio/' + props.img + '.jpg')} alt='preview' />
+            </div>
         </div >
     )
 }

@@ -144,7 +144,7 @@ a {
   justify-content: center;
   align-items: center;
   max-width: 500px;
-  height: auto;
+  height: '100%';
   flex: 1 1 300px;
 }
 
@@ -228,6 +228,16 @@ a {
     flex-direction: column;
   }
 
+  .portfolio-project-window-img-container {
+    height: '100%';
+    width: '100%';
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .logo-container {}
 
   .nav-bar-links {
@@ -244,13 +254,13 @@ a {
   }
 
   .portfolio-project-window-img {
-    display: block;
+    /* display: block;
     max-width: 100%;
     max-height: 905px;
     width: auto;
     height: auto;
     flex: 1 1 300px;
-    width: 100px;
+    width: 100px; */
   }
 
   .portfolio-project-window {
