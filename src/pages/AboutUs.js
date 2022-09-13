@@ -14,7 +14,7 @@ export default function AboutUs() {
         setTimeout(() => { window.scrollTo(0, 0) }, 100);
     }, [])
     return (
-        <>
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100vh' }}>
             <NavBar />
             <div style={{
                 paddingTop: 70,
@@ -106,6 +106,6 @@ export default function AboutUs() {
                 </div>
             </div>
             <Footer thisPageContentHeight={thisPageContentHeight} />
-        </>
+        </div>
     )
 }

@@ -13,7 +13,10 @@ export default function Services() {
         setTimeout(() => { window.scrollTo(0, 0) }, 100);
     }, [])
     return (
-        <div>
+        <div style={{
+            height: '100vh',
+            display: 'flex', flexDirection: 'column', justifyContent: "space-between"
+        }}>
             <NavBar />
             <main style={{ paddingTop: 70, fontFamily: 'Almarai, sans-serif', textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <h1 style={{ marginBottom: 40 }}>: خدماتنا</h1>

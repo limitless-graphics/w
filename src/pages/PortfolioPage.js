@@ -23,24 +23,26 @@ export default function PortfolioPage() {
         },
     ]
     return (
-        <>
-            {/* {showBigPicture && <BigPicture setBigPicture={setShowBigPicture} />} */}
-            <div style={{ paddingTop: 0, textAlign: 'right', fontFamily: 'Almarai , sans-serif' }} >
-                <NavBar />
-                {projectWindow && <ProjectWindow data={data.find((element) => element.id === projectWindow)} visibility={setProjectWindow} />}
-                <main style={{ backgroundColor: 'white', display: 'flex', justifyContent: 'center', height: 'auto' }}>
-                    <div style={{ width: '80%', maxWidth: 1500, height: 'auto' }}>
-                        <h1 style={{ marginTop: 70 }}>: نمادج</h1>
-                        <div style={{ marginTop: 0, width: '100%', color: 'black', display: 'flex', gap: 20, justifyContent: 'center', flexWrap: 'wrap', height: 'auto' }}>
-                            {data.map((element) => {
-                                return <ProjectBlock key={element.id} visibility={setProjectWindow} id={element.id} title={element.title} subTitle={element.subTitle} img={element.img} description={element.description} />
-                            })}
-                        </div>
+        <div style={{
+            height: '100vh',
+            paddingTop: 0, textAlign: 'right', fontFamily: 'Almarai , sans-serif',
+            display: 'flex', flexDirection: 'column',
+            justifyContent: 'space-between'
+        }} >
+            <NavBar />
+            {projectWindow && <ProjectWindow data={data.find((element) => element.id === projectWindow)} visibility={setProjectWindow} />}
+            <main style={{ backgroundColor: 'white', display: 'flex', justifyContent: 'center', height: 'auto' }}>
+                <div style={{ width: '80%', maxWidth: 1500, height: 'auto' }}>
+                    <h1 style={{ marginTop: 70 }}>: نمادج</h1>
+                    <div style={{ marginTop: 0, width: '100%', color: 'black', display: 'flex', gap: 20, justifyContent: 'center', flexWrap: 'wrap', height: 'auto' }}>
+                        {data.map((element) => {
+                            return <ProjectBlock key={element.id} visibility={setProjectWindow} id={element.id} title={element.title} subTitle={element.subTitle} img={element.img} description={element.description} />
+                        })}
                     </div>
-                </main >
-                <Footer alwaysNormal={true} thisPageContentHeight={thisPageContentHeight} />
-            </div >
-        </>
+                </div>
+            </main >
+            <Footer alwaysNormal={true} thisPageContentHeight={thisPageContentHeight} />
+        </div >
     )
 }
 function ProjectBlock(props) {

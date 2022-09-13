@@ -122,8 +122,8 @@ a {
 }
 
 .portfolio-project-window {
-  height: 80%;
-  width: 90%;
+  height: auto;
+  width: 900px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -159,7 +159,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: end;
-  flex: 1 1 300px;
+  flex: 0.7 1 300px;
 }
 
 .landing-page-text-div {
