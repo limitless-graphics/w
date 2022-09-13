@@ -9,14 +9,14 @@ export default function PortfolioPage() {
 
     // const [showBigPicture, setShowBigPicture] = useState(false);
 
-    if (projectWindow) document.body.style.overflow = 'hidden';
-    else document.body.style.overflow = 'scroll';
+    // if (projectWindow) document.body.style.overflow = 'hidden';
+    // else document.body.style.overflow = 'scroll';
 
     const data = [
-        { id: 1, title: 'نمودج إعلان', img: 'ad.jpg', subTitle: 'عينة من الاعلانات التي أنشأناها', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', '$thirdad.jpg'] },
+        { id: 1, title: 'نمودج إعلان', img: 'ad.jpg', subTitle: 'عينة من الاعلانات التي أنشأناها', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', 'thirdad.jpg'] },
         { id: 2, title: 'نمودج لوغو', img: 'logoGate.jpg', subTitle: 'عينة من الشعارات التي أنشأناها', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['logo3.jpg', 'logo1.jpg', 'logo2.jpg'] },
-        { id: 3, title: 'نمودج بطاقة عمل', img: 'bisunessCard2.jpg', subTitle: 'عينة من بطاقات الهوية التي أنشأناها', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['bisunessCard2.jpg', 'bisunessCard.jpg', '$thirdad.jpg'] },
-        { id: 4, title: 'نمودج هوية بصرية', img: 'ad.jpg', subTitle: 'عينة هوية بصرية أنشأناها لأحد زبائننا', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', '$thirdad.jpg'] },
+        { id: 3, title: 'نمودج بطاقة عمل', img: 'bisunessCard2.jpg', subTitle: 'عينة من بطاقات الهوية التي أنشأناها', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['bisunessCard2.jpg', 'bisunessCard.jpg', 'thirdad.jpg'] },
+        { id: 4, title: 'نمودج هوية بصرية', img: 'ad.jpg', subTitle: 'عينة هوية بصرية أنشأناها لأحد زبائننا', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', 'thirdad.jpg'] },
         {
             id: 5, title: 'نمودج تغليف', img: 'embalage.jpg', subTitle: 'عينة من تصميم تغليف لاحد عملائنا', description: `هذا النمودج من احد اعمالنا لشركة ‘بيلاتوس‘ شركة متخصصة في مواد التجميل والعناية بالبشرة 
         في هذا المشروع قمنا بإعادة تصميم أغلفة المنتجات لتصبح اكثر احترافية و مصدقية لتقوية علاقة الشركة مع عملائها` , slideshowImages: ['embalage.jpg', 'oldEmbalage.jpg', 'embalageNew.jpg']

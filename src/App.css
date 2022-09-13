@@ -26,6 +26,7 @@ html {
 .App {
   text-align: center;
   font-family: Almarai, sans-serif;
+  overflow: hidden;
 }
 
 a {
@@ -341,6 +342,13 @@ a:hover {
   align-Items: center;
   flex-direction: column;
   overflow: hidden;
+  transition: 250ms;
+}
+
+.portfolio-project-block:hover {
+  box-shadow: 15px 15px 0px #471601;
+  background-color: black;
+  cursor: pointer;
 }
 
 .portfolio-window {
@@ -370,12 +378,6 @@ a:hover {
   left: 0;
 }
 
-.portfolio-project-block:hover {
-  background-color: lightgray;
-  cursor: pointer;
-
-}
-
 .portfolio-block-image {
   display: block;
   width: 100%;
@@ -383,7 +385,7 @@ a:hover {
 }
 
 .portfolio-block-image:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .order-button {

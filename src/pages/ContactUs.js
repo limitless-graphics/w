@@ -14,7 +14,12 @@ export default function OrderPage() {
 
 
     return (
-        <>
+        <div style={{
+            height: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+        }}>
             <NavBar />
             <div style={{
                 paddingTop: 70,
@@ -32,7 +37,6 @@ export default function OrderPage() {
                     flexDirection: 'column',
                     alignItems: 'right',
                     order: 1,
-
                 }}>
                     <h1 style={{ color: 'black', marginRight: 15, }}>تواصل معنا</h1>
                     <p style={{ lineHeight: 1.5, marginRight: 15, }}>
@@ -68,6 +72,6 @@ export default function OrderPage() {
                 }} />
             </div>
             <Footer thisPageContentHeight={thisPageContentHeight} />
-        </>
+        </div>
     )
 }
