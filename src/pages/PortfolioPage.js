@@ -6,6 +6,7 @@ import '../App.css'
 export default function PortfolioPage() {
     const thisPageContentHeight = 600;
     const [projectWindow, setProjectWindow] = useState(false);
+    const [showIdentity, setShowIdentity] = useState(true);
 
     // const [showBigPicture, setShowBigPicture] = useState(false);
 
@@ -16,12 +17,13 @@ export default function PortfolioPage() {
         { id: 1, title: 'نمودج إعلان', img: 'ad.jpg', subTitle: 'عينة من الاعلانات التي أنشأناها', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', 'thirdad.jpg'] },
         { id: 2, title: 'نمودج لوغو', img: 'logoGate.jpg', subTitle: 'عينة من الشعارات التي أنشأناها', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['logo3.jpg', 'logo1.jpg', 'logo2.jpg'] },
         { id: 3, title: 'نمودج بطاقة عمل', img: 'bisunessCard2.jpg', subTitle: 'عينة من بطاقات الهوية التي أنشأناها', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['bisunessCard2.jpg', 'bisunessCard.jpg', 'thirdad.jpg'] },
-        { id: 4, title: 'نمودج هوية بصرية', img: 'ad.jpg', subTitle: 'عينة هوية بصرية أنشأناها لأحد زبائننا', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', 'thirdad.jpg'] },
+        { id: 4, title: 'نمودج هوية بصرية', img: 'plasticaId.jpg', subTitle: 'عينة هوية بصرية أنشأناها لأحد زبائننا', description: 'هده تجربة للخط فقط لارى كيف ستضهر انا الان يجب ان اتحدث عن الاعلان لاكن ذلك غير مهم سيداتي وسادتي', slideshowImages: ['ad.jpg', 'secondad.jpg', 'thirdad.jpg'] },
         {
             id: 5, title: 'نمودج تغليف', img: 'embalage.jpg', subTitle: 'عينة من تصميم تغليف لاحد عملائنا', description: `هذا النمودج من احد اعمالنا لشركة ‘بيلاتوس‘ شركة متخصصة في مواد التجميل والعناية بالبشرة 
         في هذا المشروع قمنا بإعادة تصميم أغلفة المنتجات لتصبح اكثر احترافية و مصدقية لتقوية علاقة الشركة مع عملائها` , slideshowImages: ['embalage.jpg', 'oldEmbalage.jpg', 'embalageNew.jpg']
         },
     ]
+
     return (
         <div style={{
             height: '100vh',
@@ -30,13 +32,14 @@ export default function PortfolioPage() {
             justifyContent: 'space-between'
         }} >
             <NavBar />
+            {showIdentity && <BrandIdentityWindow visibility={setShowIdentity} />}
             {projectWindow && <ProjectWindow data={data.find((element) => element.id === projectWindow)} visibility={setProjectWindow} />}
             <main style={{ backgroundColor: 'white', display: 'flex', justifyContent: 'center', height: 'auto' }}>
                 <div style={{ width: '80%', maxWidth: 1500, height: 'auto' }}>
                     <h1 style={{ marginTop: 70 }}>: نمادج</h1>
                     <div style={{ marginTop: 0, width: '100%', color: 'black', display: 'flex', gap: 20, justifyContent: 'center', flexWrap: 'wrap', height: 'auto' }}>
                         {data.map((element) => {
-                            return <ProjectBlock key={element.id} visibility={setProjectWindow} id={element.id} title={element.title} subTitle={element.subTitle} img={element.img} description={element.description} />
+                            return <ProjectBlock showIdentity={setShowIdentity} key={element.id} visibility={setProjectWindow} id={element.id} title={element.title} subTitle={element.subTitle} img={element.img} description={element.description} />
                         })}
                     </div>
                 </div>
@@ -48,6 +51,10 @@ export default function PortfolioPage() {
 function ProjectBlock(props) {
     return (
         <div onClick={() => {
+            if (props.img === 'plasticaId.jpg') {
+                props.showIdentity(true)
+                return;
+            };
             props.visibility(props.id);
         }}
             className='portfolio-project-block'>
@@ -132,5 +139,20 @@ function BigPicture(props) {
                 <img style={styles} src={require('../assets/portfolio/' + props.img + '.jpg')} alt='preview' />
             </div>
         </div >
+    )
+}
+
+function BrandIdentityWindow(props) {
+    return (
+        <div className='brand-identity-window'
+            onClick={() => {
+                props.visibility(false);
+            }}
+        >
+            <img onClick={(e) => { e.stopPropagation() }}
+                className='brand-identity-window-img'
+                src={require('../assets/portfolio/plasticaId.jpg')} alt='brand identity' />
+
+        </div>
     )
 }

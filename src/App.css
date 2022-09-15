@@ -138,6 +138,21 @@ a {
   overflow-x: hidden;
 }
 
+.brand-identity-window {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 200;
+  overflow: auto;
+}
+
+.brand-identity-window-img {
+  width: 50%;
+  position: absolute;
+  left: calc(50% - 25%);
+}
+
 .portfolio-project-window-img-container {
   /* background-color: rgb(30, 30, 30); */
   background-color: black;
@@ -219,6 +234,15 @@ a {
 @media(max-width: 710px) {
   .burger-menu-button {
     display: flex;
+  }
+
+  .portfolio-project-window {
+    width: 90%;
+  }
+
+  .brand-identity-window-img {
+    width: 80%;
+    left: calc(50% - 40%);
   }
 
   .nav-bar {

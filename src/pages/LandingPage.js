@@ -13,7 +13,7 @@ export default function LandingPage() {
         setTimeout(() => { window.scrollTo(0, 0) }, 100);
     }, [])
     return (
-        <>
+        <div>
             <NavBar />
             <div className="App" style={{ paddingTop: 70 }} >
                 <WideCard marginBottom={40}>
@@ -41,6 +41,6 @@ export default function LandingPage() {
                 </WideCard>
                 <Footer thisPageContentHeight={thisPageContentHeight} />
             </div >
-        </>
+        </div>
     )
 }

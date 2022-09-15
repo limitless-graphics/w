@@ -14,14 +14,14 @@ export default function NavBar(props) {
                 setMatchMedia(e.matches)
             });
     }, []);
-
-    window.onscroll = () => {
+    document.onscroll = (e) => {
+        // alert('hello')
         if (window.pageYOffset > 20) setShadow(true);
         else setShadow(false);
     }
     return (
         <nav className='nav-bar'
-            style={{ boxShadow: shadow && '0px 10px 5px rgba(0,0,0,0.1)' || 'none' }}
+            style={{ boxShadow: (shadow && '0px 10px 5px rgba(0,0,0,0.1)') || 'none' }}
         >
             <div onClick={() => {
                 if (navLinks.current.style.display === 'none') navLinks.current.style.display = 'flex';

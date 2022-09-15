@@ -13,115 +13,117 @@ export default function Services() {
         setTimeout(() => { window.scrollTo(0, 0) }, 100);
     }, [])
     return (
-        <div style={{
-            height: '100vh',
-            display: 'flex', flexDirection: 'column', justifyContent: "space-between"
-        }}>
+        <>
             <NavBar />
-            <main style={{ paddingTop: 70, fontFamily: 'Almarai, sans-serif', textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <h1 style={{ marginBottom: 40 }}>: خدماتنا</h1>
-                <div style={{
-                    backgroundColor: 'white',
-                    height: 'auto',
-                    width: '90%',
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    justifyContent: 'center',
-                    alignItems: 'stretch',
-                    gap: 30,
-                }}>
-                    <Card centerTitle='تصميم لوغو'
-                        title={'Logo'}
-                        description='.تصميم لوغو احترافي يراعي كل المعايير'
-                        photo='logo.png'
-                    >
-                        <div style={{}}>
-                            <h5>: الملفات النهائية</h5>
-                            <p style={{ textAlign: 'center' }}>
-                                ملف .AI <br />
-                                ملف .JPG <br />
-                                ملف .PNG <br />
-                                ملف .PDF <br />
-                                ملف .PSD <br />
-                            </p>
-                        </div>
-                    </Card>
-                    <Card centerTitle='تصميم إعلان / منشور'
-                        title={'Social media Ad'}
-                        description='تصميم اعلان او منشور سوشل ميديا'
-                        photo='socialMediaAd.png'
-                    >
+            <div style={{
+                height: '100vh',
+                display: 'flex', flexDirection: 'column', justifyContent: "space-between"
+            }}>
+                <main style={{ paddingTop: 70, fontFamily: 'Almarai, sans-serif', textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                    <h1 style={{ marginBottom: 40 }}>: خدماتنا</h1>
+                    <div style={{
+                        backgroundColor: 'white',
+                        height: 'auto',
+                        width: '90%',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        justifyContent: 'center',
+                        alignItems: 'stretch',
+                        gap: 30,
+                    }}>
+                        <Card centerTitle='تصميم لوغو'
+                            title={'Logo'}
+                            description='.تصميم لوغو احترافي يراعي كل المعايير'
+                            photo='logo.png'
+                        >
+                            <div style={{}}>
+                                <h5>: الملفات النهائية</h5>
+                                <p style={{ textAlign: 'center' }}>
+                                    ملف .AI <br />
+                                    ملف .JPG <br />
+                                    ملف .PNG <br />
+                                    ملف .PDF <br />
+                                    ملف .PSD <br />
+                                </p>
+                            </div>
+                        </Card>
+                        <Card centerTitle='تصميم إعلان / منشور'
+                            title={'Social media Ad'}
+                            description='تصميم اعلان او منشور سوشل ميديا'
+                            photo='socialMediaAd.png'
+                        >
 
 
-                        <div style={{}}>
-                            <h5>: الملفات النهائية</h5>
-                            <p style={{ textAlign: 'center' }}>
+                            <div style={{}}>
+                                <h5>: الملفات النهائية</h5>
+                                <p style={{ textAlign: 'center' }}>
+                                    ملف .AI / .PSD <br />
+                                    ملف .JPG <br />
+                                    ملف .PNG <br />
+                                    ملف .PDF <br />
+                                </p>
+                            </div>
+                        </Card>
+                        <Card
+                            title={'Brand identity'}
+                            centerTitle='تصميم هوية بصرية'
+                            description='انشاء هوية بصرية احترافية تزيد تقة العملاء'
+                            photo='brandIdentity.png'
+                        >
+                            <div style={{ textAlign: 'center' }}>
+                                <h5>: التصاميم المسلمة</h5>
+                                <p style={{ lineHeight: 1.5, fontSize: 14 }}>
+                                    Logo <br />
+                                    لغة تصميم و هوية <br />
+                                    بطاقة عمل <br />
+                                    social media post template <br />
+                                    غلاف و صورة فيسبوك <br />
+
+                                </p>
+                            </div>
+                        </Card>
+                        <Card centerTitle={'تصميم بطاقة عمل'}
+                            description={'تصميم بطاقة عمل احترافية تعكس مشروعك'}
+                            title={'Bisuness card'}
+                            finalFiles={'الملفات النهائية'}
+                            photo={'bisunessCard.png'}
+                        >
+                            <p>
                                 ملف .AI / .PSD <br />
                                 ملف .JPG <br />
                                 ملف .PNG <br />
                                 ملف .PDF <br />
                             </p>
-                        </div>
-                    </Card>
-                    <Card
-                        title={'Brand identity'}
-                        centerTitle='تصميم هوية بصرية'
-                        description='انشاء هوية بصرية احترافية تزيد تقة العملاء'
-                        photo='brandIdentity.png'
-                    >
-                        <div style={{ textAlign: 'center' }}>
-                            <h5>: التصاميم المسلمة</h5>
-                            <p style={{ lineHeight: 1.5, fontSize: 14 }}>
-                                Logo <br />
-                                لغة تصميم و هوية <br />
-                                بطاقة عمل <br />
-                                social media post template <br />
-                                غلاف و صورة فيسبوك <br />
-
+                        </Card>
+                        <Card
+                            centerTitle={'تصميم إعلان'}
+                            description={'إنشاء إعلان ملصق إحترافي'}
+                            title={'Ad banner'}
+                            finalFiles=' : الملفات النهائية'
+                            photo='adBanner.png'
+                        >
+                            <p>
+                                ملف .AI / .PSD <br />
+                                ملف .JPG <br />
+                                ملف .PNG <br />
+                                ملف .PDF <br />
                             </p>
-                        </div>
-                    </Card>
-                    <Card centerTitle={'تصميم بطاقة عمل'}
-                        description={'تصميم بطاقة عمل احترافية تعكس مشروعك'}
-                        title={'Bisuness card'}
-                        finalFiles={'الملفات النهائية'}
-                        photo={'bisunessCard.png'}
-                    >
-                        <p>
-                            ملف .AI / .PSD <br />
-                            ملف .JPG <br />
-                            ملف .PNG <br />
-                            ملف .PDF <br />
-                        </p>
-                    </Card>
-                    <Card
-                        centerTitle={'تصميم إعلان'}
-                        description={'إنشاء إعلان ملصق إحترافي'}
-                        title={'Ad banner'}
-                        finalFiles=' : الملفات النهائية'
-                        photo='adBanner.png'
-                    >
-                        <p>
-                            ملف .AI / .PSD <br />
-                            ملف .JPG <br />
-                            ملف .PNG <br />
-                            ملف .PDF <br />
-                        </p>
-                    </Card>
-                    <Card
-                        centerTitle='اطلب تصميمك الخاص'
-                        description='يمكنك طلب التصميم الذي تريد في هدا الخيار'
-                        title='تصميم خاص'
-                        finalFiles=' : الملفات المسلمة'
-                        photo='customDesign.png'
-                    >
-                        <h4>مخصصة</h4>
-                    </Card>
+                        </Card>
+                        <Card
+                            centerTitle='اطلب تصميمك الخاص'
+                            description='يمكنك طلب التصميم الذي تريد في هدا الخيار'
+                            title='تصميم خاص'
+                            finalFiles=' : الملفات المسلمة'
+                            photo='customDesign.png'
+                        >
+                            <h4>مخصصة</h4>
+                        </Card>
 
-                </div>
-            </main>
-            <Footer thisPageContentHeight={thisPageContentHeight} />
-        </div>
+                    </div>
+                </main>
+                <Footer thisPageContentHeight={thisPageContentHeight} />
+            </div>
+        </>
     )
 }
 function Card(props) {
