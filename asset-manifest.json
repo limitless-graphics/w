@@ -1,19 +1,30 @@
 {
   "files": {
-    "main.css": "/w/static/css/main.2d6096d1.css",
-    "main.js": "/w/static/js/main.ee9aa959.js",
+    "main.css": "/w/static/css/main.1bef5249.css",
+    "main.js": "/w/static/js/main.0b1b732d.js",
     "static/js/787.866c570c.chunk.js": "/w/static/js/787.866c570c.chunk.js",
     "static/media/landingPageImage2.png": "/w/static/media/landingPageImage2.590558f82a8ec4d3b898.png",
+    "static/media/embalageNew.jpg": "/w/static/media/embalageNew.e9fe19b5dbe50bd9f40c.jpg",
     "static/media/ad.jpg": "/w/static/media/ad.6690752cc6c9e8b3b90b.jpg",
+    "static/media/plasticaId.jpg": "/w/static/media/plasticaId.28b33825417c64c447d6.jpg",
+    "static/media/embalage.jpg": "/w/static/media/embalage.c201c84407a0e58dea46.jpg",
     "static/media/landingPageImage1.png": "/w/static/media/landingPageImage1.5ca50297f54d7b1ba84f.png",
     "static/media/designerGirl.jpg": "/w/static/media/designerGirl.03b64ebb5bc0783f5b1a.jpg",
-    "static/media/ad3.jpg": "/w/static/media/ad3.942a4bb1fa9185d67047.jpg",
-    "static/media/ad2.jpg": "/w/static/media/ad2.cf8b9ddf79a6c8b20580.jpg",
-    "static/media/logo2.jpg": "/w/static/media/logo2.e44aa6a34abd8451d3dd.jpg",
+    "static/media/secondad.jpg": "/w/static/media/secondad.d3786f8d0d0bda6068ae.jpg",
+    "static/media/thirdad.jpg": "/w/static/media/thirdad.3a82fb2a8ecab8acb0df.jpg",
+    "static/media/credantialsPartners.jpg": "/w/static/media/credantialsPartners.f47aaf9aed5218e9c24e.jpg",
+    "static/media/almadfoon.jpg": "/w/static/media/almadfoon.2c5c243dccc31c6f466c.jpg",
+    "static/media/bisunessCard.jpg": "/w/static/media/bisunessCard.189842f7d1ad4cf4fb92.jpg",
+    "static/media/logo1.jpg": "/w/static/media/logo1.378913440431a992f1fa.jpg",
+    "static/media/bisunessCard2.jpg": "/w/static/media/bisunessCard2.8ae0dce2d89139f68866.jpg",
+    "static/media/oldEmbalage.jpg": "/w/static/media/oldEmbalage.0609797f0f5587dbbc37.jpg",
+    "static/media/logo2.jpg": "/w/static/media/logo2.bb6e5854b665ab4adf50.jpg",
+    "static/media/logo3.jpg": "/w/static/media/logo3.1b66375e042c841c5259.jpg",
     "static/media/socialMediaAd.png": "/w/static/media/socialMediaAd.00c1ecddeca2a15666be.png",
     "static/media/desigerGirl.svg": "/w/static/media/desigerGirl.f486d9fa7c5b9748c15e746ffbc18c5d.svg",
     "static/media/investments.svg": "/w/static/media/investments.d66b0fd4d2d9ce7fde9ee379e8e443e1.svg",
     "static/media/aboutUs.svg": "/w/static/media/aboutUs.8bf21a4ded8e5b97277cb09bc7a73db5.svg",
+    "static/media/logoGate.jpg": "/w/static/media/logoGate.fa9ee326b7668309f360.jpg",
     "static/media/brandIdentity.png": "/w/static/media/brandIdentity.c922894684ce7dd04603.png",
     "static/media/contactUs.svg": "/w/static/media/contactUs.a972836371ca043db177211eb20cc242.svg",
     "static/media/logo.png": "/w/static/media/logo.50e9bce60fd80e56f4ea.png",
@@ -23,12 +34,12 @@
     "static/media/facebook-messenger.svg": "/w/static/media/facebook-messenger.e26ccb007b206998a995f046994da326.svg",
     "index.html": "/w/index.html",
     "static/media/facebook-icon.svg": "/w/static/media/facebook-icon.f968c4bae61762b90b5e1041498e425b.svg",
-    "main.2d6096d1.css.map": "/w/static/css/main.2d6096d1.css.map",
-    "main.ee9aa959.js.map": "/w/static/js/main.ee9aa959.js.map",
+    "main.1bef5249.css.map": "/w/static/css/main.1bef5249.css.map",
+    "main.0b1b732d.js.map": "/w/static/js/main.0b1b732d.js.map",
     "787.866c570c.chunk.js.map": "/w/static/js/787.866c570c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d6096d1.css",
-    "static/js/main.ee9aa959.js"
+    "static/css/main.1bef5249.css",
+    "static/js/main.0b1b732d.js"
   ]
 }
