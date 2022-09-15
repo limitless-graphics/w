@@ -6,7 +6,7 @@ import '../App.css'
 export default function PortfolioPage() {
     const thisPageContentHeight = 600;
     const [projectWindow, setProjectWindow] = useState(false);
-    const [showIdentity, setShowIdentity] = useState(true);
+    const [showIdentity, setShowIdentity] = useState(false);
 
     // const [showBigPicture, setShowBigPicture] = useState(false);
 
