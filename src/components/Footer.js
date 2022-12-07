@@ -67,7 +67,7 @@ function FooterBlock(props) {
             borderRight: '5px solid rgba(0,0,0,0.2)',
             flex: '1 1 300px',
             maxWidth: 400,
-            height: 'auto',
+            height: 250,
             display: 'flex',
             flexDirection: 'column',
             flexWrap: 'wrap',
