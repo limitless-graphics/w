@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/w/static/css/main.1bef5249.css",
-    "main.js": "/w/static/js/main.d9654ac9.js",
+    "main.css": "/w/static/css/main.858e67dc.css",
+    "main.js": "/w/static/js/main.ca9791c4.js",
     "static/js/787.866c570c.chunk.js": "/w/static/js/787.866c570c.chunk.js",
     "static/media/landingPageImage2.png": "/w/static/media/landingPageImage2.590558f82a8ec4d3b898.png",
     "static/media/embalageNew.jpg": "/w/static/media/embalageNew.e9fe19b5dbe50bd9f40c.jpg",
@@ -34,12 +34,12 @@
     "static/media/facebook-messenger.svg": "/w/static/media/facebook-messenger.e26ccb007b206998a995f046994da326.svg",
     "index.html": "/w/index.html",
     "static/media/facebook-icon.svg": "/w/static/media/facebook-icon.f968c4bae61762b90b5e1041498e425b.svg",
-    "main.1bef5249.css.map": "/w/static/css/main.1bef5249.css.map",
-    "main.d9654ac9.js.map": "/w/static/js/main.d9654ac9.js.map",
+    "main.858e67dc.css.map": "/w/static/css/main.858e67dc.css.map",
+    "main.ca9791c4.js.map": "/w/static/js/main.ca9791c4.js.map",
     "787.866c570c.chunk.js.map": "/w/static/js/787.866c570c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bef5249.css",
-    "static/js/main.d9654ac9.js"
+    "static/css/main.858e67dc.css",
+    "static/js/main.ca9791c4.js"
   ]
 }
