@@ -50,7 +50,6 @@ export default function Footer(props) {
                 }}>
 
                     <FooterBlock title='القليل عنا' first={true} paragraph='نحن مجموعة من المصمميم المغاربة اصحاب خبرة و مهارة يشهد بها زبناءنا تتمحور مهمتنا في تطوير الهوية البصرية للشركات و المشاريع الصغرا بأثمنة في متناول الجميع' />
-                    <FooterBlock title='hello' />
                     <FooterBlock title='تواصل معنا' third={true} paragraph=' : تواصل معنا عبر الوسائط الثالية' />
                 </div>
             </div>
